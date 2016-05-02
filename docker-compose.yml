@@ -26,3 +26,8 @@ services:
       dockerfile: esb-worker/Dockerfile
     ports:
       - "9444:9443"
+   svnrepo:
+     container_name: svnrepo
+     build:
+        context: .
+        dockerfile: svn/Dockerfile
