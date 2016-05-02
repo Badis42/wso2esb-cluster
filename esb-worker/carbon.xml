@@ -571,8 +571,8 @@
     -->
     <DeploymentSynchronizer>
         <Enabled>true</Enabled>
-        <AutoCommit>true</AutoCommit>
-        <AutoCheckout>false</AutoCheckout>
+        <AutoCommit>false</AutoCommit>
+        <AutoCheckout>true</AutoCheckout>
         <RepositoryType>svn</RepositoryType>
         <SvnUrl>http://svnrepo/repos/</SvnUrl>
         <SvnUser>username</SvnUser>

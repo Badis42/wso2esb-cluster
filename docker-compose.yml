@@ -5,8 +5,6 @@ services:
     build: 
         context: .
         dockerfile: database/Dockerfile
-    ports:
-     - "3306:3306"
     environment:
         MYSQL_ROOT_PASSWORD: root
   manager:
@@ -18,13 +16,13 @@ services:
       dockerfile: esb-manager/Dockerfile
     ports:
       - "9443:9443"
-#  worker1:
-#    container_name: esb_worker1
-#    depends_on: 
-#      - dbms
-#      - manager
-#    build:
-#      context: .
-#      dockerfile: esb-worker/Dockerfile
-#    ports:
-#      - "9444:9443"
+  worker1:
+    container_name: esb_worker1
+    depends_on: 
+      - dbms
+      - manager
+    build:
+      context: .
+      dockerfile: esb-worker/Dockerfile
+    ports:
+      - "9444:9443"
