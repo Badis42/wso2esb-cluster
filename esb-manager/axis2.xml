@@ -581,7 +581,7 @@
             <applicationDomain name="wso2.esb.domain"
                                description="ESB group"
                                agent="org.wso2.carbon.core.clustering.hazelcast.HazelcastGroupManagementAgent"
-                               subDomain="worker"
+                               subDomain="mgt"
                                port="2222"/>
         </groupManagement>
     </clustering>
