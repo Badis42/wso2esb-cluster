@@ -572,12 +572,12 @@
     <DeploymentSynchronizer>
         <Enabled>true</Enabled>
         <AutoCommit>true</AutoCommit>
-        <AutoCheckout>false</AutoCheckout>
+        <AutoCheckout>true</AutoCheckout>
         <RepositoryType>svn</RepositoryType>
-        <SvnUrl>http://svnrepo/repo/</SvnUrl>
+        <SvnUrl>http://svnrepo/repo</SvnUrl>
         <SvnUser>user</SvnUser>
         <SvnPassword>password</SvnPassword>
-        <SvnUrlAppendTenantId>true</SvnUrlAppendTenantId>
+        <SvnUrlAppendTenantId>false</SvnUrlAppendTenantId>
     </DeploymentSynchronizer>
 
     <!-- Deployment Synchronizer Configuration. Uncomment the following section when running with "registry based" dep sync.
