@@ -1,6 +1,6 @@
-CREATE Database `mysql-greg-db`;
+CREATE Database `ESB_DB`;
 
-USE `mysql-greg-db`;
+USE `ESB_DB`;
 
 CREATE TABLE IF NOT EXISTS REG_CLUSTER_LOCK (
              REG_LOCK_NAME VARCHAR (20),
