@@ -7,6 +7,9 @@ services:
         dockerfile: database/Dockerfile
     environment:
         MYSQL_ROOT_PASSWORD: root
+  svnrepo:
+    container_name: svnrepo
+    image: dockerhub.private.wso2.com/svnrepo
   manager:
     container_name: esb_manager
     depends_on: 
@@ -16,16 +19,13 @@ services:
       dockerfile: esb-manager/Dockerfile
     ports:
       - "9443:9443"
-  worker1:
-    container_name: esb_worker1
-    depends_on: 
-      - dbms
-      - manager
-    build:
-      context: .
-      dockerfile: esb-worker/Dockerfile
-    ports:
-      - "9444:9443"
-  svnrepo:
-    container_name: svnrepo
-    image: dockerhub.private.wso2.com/svnrepo
+#  worker1:
+#    container_name: esb_worker1
+#    depends_on: 
+#      - dbms
+#      - manager
+#    build:
+#      context: .
+#      dockerfile: esb-worker/Dockerfile
+#    ports:
+#      - "9444:9443"
