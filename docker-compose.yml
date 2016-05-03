@@ -27,5 +27,5 @@ services:
     build:
       context: .
       dockerfile: esb-worker/Dockerfile
-#    ports:
-#      - "9444:9443"
+    ports:
+      - "9444:9443"
