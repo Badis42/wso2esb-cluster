@@ -520,7 +520,7 @@
         -->
         <!-- The host name or IP address of this member -->
 
-        <parameter name="localMemberHost">127.0.0.1</parameter>
+        <parameter name="localMemberHost">esb_manager</parameter>
 
         <!--
             The bind adress of this member. The difference between localMemberHost & localMemberBindAddress
