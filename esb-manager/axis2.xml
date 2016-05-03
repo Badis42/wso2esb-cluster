@@ -567,7 +567,7 @@
         -->
         <members>
             <member>
-                <hostName>esb-manager</hostName>
+                <hostName>esb_manager</hostName>
                 <port>4000</port>
             </member>
         </members>
