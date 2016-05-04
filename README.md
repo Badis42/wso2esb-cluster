@@ -2,7 +2,10 @@
 
 Following instructions will help you to setup the deployment
 
- Execute ``` docker-compose up -d ```
+ Execute 
+ 
+ ``` docker login dockerhub.private.wso2.com 
+     docker-compose up```
 
 This will setup 
 
