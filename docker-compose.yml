@@ -27,5 +27,11 @@ services:
     build:
       context: .
       dockerfile: esb-worker/Dockerfile
-    ports:
-      - "9444:9443"
+  nginx:
+    container_name: lb
+    depends_on: 
+      - manager
+      - worker1
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
