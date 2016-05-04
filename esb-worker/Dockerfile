@@ -8,3 +8,4 @@ COPY esb-worker/axis2.xml /mnt/wso2/carbon-home/repository/conf/axis2/
 COPY esb-worker/registry.xml /mnt/wso2/carbon-home/repository/conf/
 COPY esb-worker/carbon.xml /mnt/wso2/carbon-home/repository/conf/
 COPY esb-worker/master-datasources.xml /mnt/wso2/carbon-home/repository/conf/datasources/
+COPY esb-worker/wso2server.sh /mnt/wso2/carbon-home/bin/
