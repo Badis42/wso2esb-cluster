@@ -28,10 +28,17 @@ services:
       context: .
       dockerfile: esb-worker/Dockerfile
   nginx:
-    container_name: lb
+    container_name: nginx
     depends_on: 
       - manager
       - worker1
+    links:
+      - worker1:esb.wso2.org
+      - worker1:ssl.esb.wso2.org
+      - manager:mgt.esb.wso2.org
     build:
       context: .
       dockerfile: nginx/Dockerfile
+    ports:
+      - "443:443"
+      - "80:80"
