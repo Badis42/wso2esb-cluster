@@ -10,7 +10,9 @@ Following instructions will help you to setup the deployment
 
 This will setup 
 
-* A mysql server (container) with esbdb
+* Mysql server (container) with esbdb
+* SVN server and create svn repo
 * ESB-Manager runs on its own in a container
 * ESB-Worker runs on its own in a container and clustred with ESB-Manager node
+* Nginx load Balancer container and add ESB enpoints
 
