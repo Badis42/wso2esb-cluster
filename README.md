@@ -1,5 +1,7 @@
 ### ESB clustred deployment ###
 
+![alt tag](https://docs.wso2.com/download/attachments/47525837/ClusterESB.png)
+
 Following instructions will help you to setup the deployment
 
  Execute 
