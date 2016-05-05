@@ -14,5 +14,5 @@ This will setup
 * SVN server and create svn repo
 * ESB-Manager runs on its own in a container
 * ESB-Worker runs on its own in a container and clustred with ESB-Manager node
-* Nginx load Balancer container and add ESB enpoints
+* Nginx Load Balancer container and add ESB enpoints
 
