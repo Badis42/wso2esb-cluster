@@ -25,6 +25,8 @@ services:
     build:
       context: .
       dockerfile: esb-worker/Dockerfile
+    environment:
+      - SLEEP=10
   nginx:
     container_name: nginx
     depends_on: 
